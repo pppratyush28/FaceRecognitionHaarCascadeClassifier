@@ -7,7 +7,7 @@ It consists of two scripts/notebooks:
 
 ---
 
-## ** Project Structure**
+## **Project Structure**
 ```
 ├── FaceDataCollection.ipynb
 ├── face_recognition.ipynb
@@ -18,7 +18,7 @@ It consists of two scripts/notebooks:
 
 ---
 
-## ** Installation**
+## **Installation**
 1. **Clone this repository**
 
    git clone https://github.com/your-username/face-recognition-haar.git
@@ -35,7 +35,7 @@ It consists of two scripts/notebooks:
 
     Place it in the project root directory.
 
-## ** Usage**
+## **Usage**
 1. **Collect Face Data**
     Run the notebook FaceDataCollection.ipynb:
     Captures multiple images of your face.
@@ -47,10 +47,10 @@ It consists of two scripts/notebooks:
     Trains a LBPH face recognizer.
     Recognizes faces from webcam feed in real-time.
 
-## ** Notes**
+## **Notes**
     Make sure your webcam is connected and working.
     Lighting conditions affect accuracy; ensure good lighting.
     Haar Cascade is lightweight but less accurate than deep learning–based methods.
 
-## ** License**
+## **License**
 This project is licensed under the MIT License. You are free to use, modify, and distribute it.
