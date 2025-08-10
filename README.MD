@@ -11,7 +11,7 @@ It consists of two scripts/notebooks:
 ```
 ├── FaceDataCollection.ipynb
 ├── face_recognition.ipynb
-├── haarcascade_frontalface_default.xml # Haar Cascade file (place here)
+├── haarcascade_frontalface_default.xml # Haar Cascade file 
 ├── requirements.txt
 └── README.md
 ```
@@ -30,6 +30,7 @@ It consists of two scripts/notebooks:
 
 3. **Download Haar Cascade**
 
+    (To be done if not already cloned from the project)
     The file haarcascade_frontalface_default.xml is available from OpenCV's GitHub:
     https://github.com/opencv/opencv/tree/master/data/haarcascades
 
@@ -38,17 +39,18 @@ It consists of two scripts/notebooks:
 ## **Usage**
 1. **Collect Face Data**
     Run the notebook FaceDataCollection.ipynb:
-    Captures multiple images of your face.
-    Saves them in a folder named dataset/ with labels.
+    It captures multiple images of your face.
+    Saves them in a folder named data.
 
 2. **Train & Recognize Faces**
     Run face_recognition.ipynb:
-    Loads the dataset.
-    Trains a LBPH face recognizer.
-    Recognizes faces from webcam feed in real-time.
+    It loads the dataset.
+    Recognizes faces from webcam feed in real-time using KNN Classifier.
 
 ## **Notes**
     Make sure your webcam is connected and working.
+    Remember to press 'q' on the keyboard to stop the face data collection program.
+    Remember to press 'q' on the keyboard when you want to stop the face recognition program.
     Lighting conditions affect accuracy; ensure good lighting.
     Haar Cascade is lightweight but less accurate than deep learning–based methods.
 

@@ -1,5 +1,15 @@
 import cv2
 import numpy as np
+import os
+
+folder_name = "data"
+folder_path = os.path.join(os.getcwd(), folder_name)
+# Check if the data folder exists
+if not os.path.exists(folder_path):
+    os.makedirs(folder_path)  # Create the folder (and any parents if needed)
+    print(f"Folder '{folder_name}' created at: {folder_path}")
+else:
+    print(f"Folder '{folder_name}' already exists at: {folder_path}")
 
 # initializing camera
 cap = cv2.VideoCapture(0)
@@ -38,10 +48,8 @@ while True:
             face_data.append(face_section)
             print(len(face_data))
 
-
-
-    cv2.imshow("Video Frame",frame)
-    cv2.imshow("Face",face_section)
+        cv2.imshow("Video Frame",frame)
+        cv2.imshow("Face",face_section)
 
 
     # wait for user input -q, then the loop will stop
@@ -60,4 +68,4 @@ print("data saved at "+ dataset_path+file_name+'.npy')
 
 cap.release()
 cv2.destroyAllWindows()          
-cv2.waitKey(5)
+cv2.waitKey(1)
